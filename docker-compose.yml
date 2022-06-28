@@ -3,7 +3,7 @@
 version: '3.8'
 
 services:
-  pydio:
+  cells:
     image: pydio/cells:${APP_VERSION}
     container_name: ${APP_NAME}
     ports:
@@ -14,6 +14,7 @@ services:
       - CELLS_LOG_LEVEL=production
       - CELLS_BIND=:8080
       - CELLS_NO_TLS=1
+      - CELLS_EXTERNAL=$APP_URL
     restart: always
 
   mysql:
