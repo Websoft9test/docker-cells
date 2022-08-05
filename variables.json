@@ -1,7 +1,7 @@
 {
   "name": "pydio",
   "trademark": "Pydio Cells",
-  "installpath": "/data/wwwroot/pydio",
+  "installpath": "/data/apps/pydio",
   "compose_file": "docker-compose.yml",
   "env_file": ".env",
   "requirements":{
